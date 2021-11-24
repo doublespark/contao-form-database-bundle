@@ -3,13 +3,9 @@
 /**
  * Backend modules
  */
-array_insert($GLOBALS['BE_MOD']['system'], 1, array
-(
-    'form_submissions' => array
-    (
-        'tables' => array('tl_form_db')
-    )
-));
+$GLOBALS['BE_MOD']['system']['form_submissions'] = [
+    'tables' => ['tl_form_db']
+];
 
 /**
  * Hooks
