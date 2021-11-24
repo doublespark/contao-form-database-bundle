@@ -16,7 +16,8 @@ $GLOBALS['TL_DCA']['tl_form_db'] = array
 			(
 				'id' => 'primary'
 			)
-		)
+		),
+        'closed' => true
 	),
 
 	// List
