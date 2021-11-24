@@ -1,3 +1,3 @@
 Form database bundle
 ====================
-A bundle for Contao 4. Saves all submitted FE forms to the database.
+Saves all forms created using Contao's frontend form manager when they are submitted in the frontend.
