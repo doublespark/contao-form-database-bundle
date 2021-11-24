@@ -10,9 +10,8 @@ class FormDatabaseHooks
      * Process submitted form
      * @param array $arrPost
      * @param array $arrForm
-     * @param array $arrFiles
      */
-    public function processFormData(array $arrPost, array $arrForm, array $arrFiles): void
+    public function processFormData(array $arrPost, array $arrForm): void
     {
         if(count($arrPost) > 0)
         {
