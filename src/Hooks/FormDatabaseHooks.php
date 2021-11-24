@@ -7,14 +7,14 @@ use Doublespark\FormDatabase\Models\FormDbModel;
 class FormDatabaseHooks
 {
     /**
-     * When a form is submitted
-     * @param $arrPost
-     * @param $arrForm
-     * @param $arrFiles
+     * Process submitted form
+     * @param array $arrPost
+     * @param array $arrForm
+     * @param array $arrFiles
      */
-    public function processFormData($arrPost, $arrForm, $arrFiles)
+    public function processFormData(array $arrPost, array $arrForm, array $arrFiles): void
     {
-        if(is_array($arrPost))
+        if(count($arrPost) > 0)
         {
             $objFormSubmission                 = new FormDbModel();
             $objFormSubmission->tstamp         = time();
