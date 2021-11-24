@@ -26,7 +26,7 @@ $GLOBALS['TL_DCA']['tl_form_db'] = array
 		'sorting' => array
 		(
 			'mode'                    => 1,
-			'flag'                    => 7,
+			'flag'                    => 8,
 			'fields'                  => array('submitted_date'),
 			'panelLayout'             => 'filter;sort,search,limit',
 			'disableGrouping'         => false
