@@ -12,6 +12,6 @@ array_insert($GLOBALS['BE_MOD']['system'], 1, array
 ));
 
 /**
- * Remove locale from URL
+ * Hooks
  */
 $GLOBALS['TL_HOOKS']['processFormData'][] = ['Doublespark\FormDatabase\Hooks\FormDatabaseHooks', 'processFormData'];
