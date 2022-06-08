@@ -1,6 +1,11 @@
 Form database module
 ====================
 
+Version 1.0.2 (2022-06-08)
+-------------------------
+- Fix undefined array key error from DCA
+- Remove labels from DCA
+
 Version 1.0.1 (2021-11-24)
 --------------------------
 - Improvements to backend submissions list
