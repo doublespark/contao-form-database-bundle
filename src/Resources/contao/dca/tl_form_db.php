@@ -41,7 +41,6 @@ $GLOBALS['TL_DCA']['tl_form_db'] = array
 		(
 			'all' => array
 			(
-				'label'               => &$GLOBALS['TL_LANG']['MSC']['all'],
 				'href'                => 'act=select',
 				'class'               => 'header_edit_all',
 				'attributes'          => 'onclick="Backend.getScrollOffset()" accesskey="e"'
@@ -51,20 +50,17 @@ $GLOBALS['TL_DCA']['tl_form_db'] = array
 		(
 			'edit' => array
 			(
-				'label'               => &$GLOBALS['TL_LANG']['tl_form_db']['edit'],
 				'href'                => 'act=edit',
 				'icon'                => 'edit.gif'
 			),
 			'delete' => array
 			(
-				'label'               => &$GLOBALS['TL_LANG']['tl_form_db']['delete'],
 				'href'                => 'act=delete',
 				'icon'                => 'delete.gif',
 				'attributes'          => 'onclick="if(!confirm(\'' . ($GLOBALS['TL_LANG']['MSC']['deleteConfirm'] ?? null) . '\'))return false;Backend.getScrollOffset()"',
 			),
 			'show' => array
 			(
-				'label'               => &$GLOBALS['TL_LANG']['tl_form_db']['show'],
 				'href'                => 'act=show',
 				'icon'                => 'show.gif'
 			)
@@ -90,7 +86,6 @@ $GLOBALS['TL_DCA']['tl_form_db'] = array
 		),
         'submitted_date' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_form_db']['submitted_date'],
             'default'                 => time(),
             'inputType'               => 'text',
             'eval'                    => array('rgxp'=>'datim', 'datepicker'=>true, 'mandatory'=>true),
@@ -98,14 +93,12 @@ $GLOBALS['TL_DCA']['tl_form_db'] = array
         ),
 		'form_name' => array
 		(
-			'label'                   => &$GLOBALS['TL_LANG']['tl_form_db']['form_name'],
 			'search'                  => true,
 			'inputType'               => 'text',
 			'sql'                     => "varchar(155) NOT NULL default ''"
 		),
         'form_data' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG']['tl_form_db']['form_data'],
             'sql'                     => "text NULL",
             'input_field_callback'    => array('tl_form_db', 'formDataField')
         ),
