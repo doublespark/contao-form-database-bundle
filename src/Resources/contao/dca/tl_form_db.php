@@ -110,7 +110,7 @@ $GLOBALS['TL_DCA']['tl_form_db'] = array
  *
  * Provide miscellaneous methods that are used by the data configuration array.
  */
-class tl_form_db extends Backend
+class tl_form_db extends \Contao\Backend
 {
     /**
      * Generate label for the Contao backend list
