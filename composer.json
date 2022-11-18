@@ -1,6 +1,6 @@
 {
-  "name": "doublespark/form-database",
-  "type": "contao-bundle",
+  "name": "doublespark/contao-form-database-bundle",
+  "type": "ds-contao-bundle",
   "description": "Saves Contao frontend form submissions to the database.",
   "license": "MIT",
   "authors": [
