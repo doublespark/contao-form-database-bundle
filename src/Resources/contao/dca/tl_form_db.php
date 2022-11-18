@@ -1,5 +1,9 @@
 <?php
 
+use Contao\DC_Table;
+use Contao\Backend;
+use Contao\DataContainer;
+
 /**
  * Table tl_form_db
  */
@@ -9,7 +13,7 @@ $GLOBALS['TL_DCA']['tl_form_db'] = array
 	// Config
 	'config' => array
 	(
-		'dataContainer' => 'Table',
+		'dataContainer' => DC_Table::class,
 		'sql' => array
 		(
 			'keys' => array
@@ -110,7 +114,7 @@ $GLOBALS['TL_DCA']['tl_form_db'] = array
  *
  * Provide miscellaneous methods that are used by the data configuration array.
  */
-class tl_form_db extends \Contao\Backend
+class tl_form_db extends Backend
 {
     /**
      * Generate label for the Contao backend list
