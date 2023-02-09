@@ -2,7 +2,9 @@
 
 namespace Doublespark\FormDatabase\Models;
 
-class FormDbModel extends \Model
+use Contao\Model;
+
+class FormDbModel extends Model
 {
 	/**
 	 * Table name
