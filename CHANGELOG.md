@@ -1,4 +1,7 @@
 # Change log
+## Version 1.1.1 (2023-02-09)
+- Fix bug in model
+
 ## Version 1.1.0 (2022-11-18)
 - Update for Contao 5
 
