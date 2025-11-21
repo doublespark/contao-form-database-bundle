@@ -1,4 +1,7 @@
 # Change log
+## Version 1.1.2 (2025-11-21)
+- Handle array values
+
 ## Version 1.1.1 (2023-02-09)
 - Fix bug in model
 
