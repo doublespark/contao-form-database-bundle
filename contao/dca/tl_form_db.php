@@ -158,6 +158,11 @@ class tl_form_db extends Backend
             $html .= '<tr><th width="200">Field</th><th>Value</th></tr>';
             foreach($formData as $field => $value)
             {
+                if(is_array($value))
+                {
+                    $value = implode(', ',$value);
+                }
+
                 $html .= '<tr><td>'.$field.'</td><td>'.$value.'</td></tr>';
             }
             $html .= '</table><style>#formdata td, #formdata th { padding:10px; border:1px solid #CCC; border-collapse: collapse; }</style>';
